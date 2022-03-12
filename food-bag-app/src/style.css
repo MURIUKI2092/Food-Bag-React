@@ -152,13 +152,38 @@ input{
    width: 90%;
 }
 .serve{
-border-top:1px solid rgb(237, 230, 230) ;
-border-width: 50%;
-margin-right: 20px;
-text-align: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 
 }
 .serve h3{
     margin-top: 5px;
+    height: 100%;
+}
+.serveSection{
+    border-top:1px solid rgb(237, 230, 230) ;
+    border-width: 50%;
+    margin-right: 20px;
+    text-align: center;
+}
+.serveLocation{
+    
+    width: 70%;
+    height: 150px;
+}
+.yourWant{
+    
+    width: 70%;
+}
+.come{
+    
+    width: 70%;
+    
+}
+.serve :nth-child(1n):hover{
+    background-color: rgb(248, 244, 244);
+    transform: scale(1.3);
 }

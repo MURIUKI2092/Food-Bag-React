@@ -1,9 +1,19 @@
-import React from "react";
-import LandCards from "../components/landCards";
+import React,{Fragment} from "react";
+import Additional from "../components/additional";
+import BuyerDetail from "../components/buyersDetaills";
+import LandCards from "../components/landCards"; 
 
 const Buyers = ({children}) => {
   return (
-    <LandCards/>
+    <Fragment>
+      <BuyerDetail/>
+      <LandCards/>
+      <Additional/>
+
+
+    </Fragment>
+   
+    
   );
 } 
 

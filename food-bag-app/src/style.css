@@ -110,80 +110,39 @@ li{
     height: 100vh;
     margin-left: 30px;
     margin-top: 10px;
+    margin-right: 10px;
 }
-.buyerDetail{
-    padding :10px;
-    
-}
-input{
-    margin-top: 10px;
-    width: 70%;
-    height: 20px;
-    border: 2px solid rgb(191, 187, 187);
-    border-radius: 4px;
-}
-.buyerInterest{
-    margin-top: 15px;
-    margin-bottom: 35px;
-    color: rgb(144, 140, 140);
+
+.cards{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
 }
-.fastFood{
-    border: 1px solid rgb(216, 212, 212);
-    height: 150px;
-    width: 90%;
-}
-.veggies{
-    border: 1px solid  rgb(216, 212, 212);
-    height: 150px;
-    width: 90%;
+.userLocation{
+    margin-top: 10px;
+    width: 100%;
 
 }
-.Drinks{
-    border: 1px solid  rgb(216, 212, 212);
-    height: 150px;
-    width: 90%;
+.landingChoice{
+ 
+    margin-top: 30px;
+    margin-bottom: 20px;
+  
 }
-.restaurant{
-   border: 1px solid  rgb(216, 212, 212);
-   height: 150px;
-   width: 90%;
+.additional{
+   
+    margin-top: 20px;
+    border-top:1px solid rgb(237, 230, 230); ;
+    text-align: center;
+    
 }
-.serve{
-    margin-left: 25px;
-    margin-top: 25px;
+.additional h2{
+    margin-top: 30px;
+}
+.additionalInfo{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
 
 
-}
-.serve h3{
-    margin-top: 5px;
-    height: 100%;
-}
-.serveSection{
-    border-top:1px solid rgb(237, 230, 230) ;
-    border-width: 50%;
-    margin-right: 20px;
-    text-align: center;
-}
-.serveLocation{
-    
-    width: 70%;
-    height: 150px;
-}
-.yourWant{
-    
-    width: 70%;
-}
-.come{
-    
-    width: 70%;
-    
-}
-.serve :nth-child(1n):hover{
-    background-color: rgb(248, 244, 244);
-    transform: scale(1.3);
-}

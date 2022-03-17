@@ -1,4 +1,7 @@
 import React from "react";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer=()=>{
     return(
@@ -28,9 +31,9 @@ const Footer=()=>{
                 </div>
                 <div className="socials">
                 <h3>Social Media</h3>
-                    <li><em>Twitter</em></li>
-                    <li><em>Facebook</em></li>
-                    <li><em>Instagram</em></li>
+                    <li><em><TwitterIcon/></em></li>
+                    <li><em><FacebookIcon/></em></li>
+                    <li><em><InstagramIcon/></em></li>
                     
                 </div>
 

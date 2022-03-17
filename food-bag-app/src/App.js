@@ -4,7 +4,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar"
 import Footer from './components/footer';
 import MainContainer from './containers/main';
-import Buyers from './containers/landing';
+
+
+import Buyers from './containers/landing'; 
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Navbar/>
       <MainContainer>
         <Buyers/>
+        
       </MainContainer>
      
       

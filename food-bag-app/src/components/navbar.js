@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from "@mui/material/Button";
+import { red } from "@mui/material/colors";
+import Typography from "@mui/material/Typography";
 /* import Button from '@mui/material/Button'; */
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
@@ -6,6 +9,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import SignIn from './login';
 import SignUp from './register';
+import CartReview from './buyerCart';
 
 const style = {
     position: 'absolute',
@@ -48,7 +52,17 @@ const Navbar = ()=>{
         </div>
         <div className='headerLinks'>
             <li>
-            <button onClick={handleOpen}>login</button>
+            <Button onClick={handleOpen}>
+                <Typography
+                  style={{
+                    fontWeight: "600",
+                    fontSize: "14px",
+                    color: red[600],
+                  }}
+                >
+                  Select Trip
+                </Typography>
+              </Button>
             <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -92,6 +106,24 @@ const Navbar = ()=>{
             <li>
                 
             <button onClick={handleOpen}>Cart</button>
+            <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <Box sx={style}>
+              <CartReview/>
+           
+          </Box>
+        </Fade>
+      </Modal>
             </li>
         </div>
         </div>

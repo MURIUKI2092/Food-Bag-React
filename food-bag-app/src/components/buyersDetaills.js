@@ -12,9 +12,12 @@ const BuyerDetail =()=>{
   return(
     <div className='userLocation'>
         <TextField
+        InputProps={{ style: { fontSize: 18 } }}
+        InputLabelProps={{ style: { fontSize: 18} }}
          sx={{ m: 1,
            width: '90ch',
-          minWidth:"45ch" }} 
+          minWidth:"45ch",
+          }} 
           id="standard-multiline-flexible"
           label="Where are you?"
           
@@ -24,6 +27,7 @@ const BuyerDetail =()=>{
           onChange={handleChange}
           variant="standard"
           width={10}
+          font={20}
         />
       
     </div>
